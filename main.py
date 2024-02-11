@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from plyer import notification  # You can install this using: pip install plyer
 import datetime
 import os
 
@@ -17,7 +16,7 @@ def check_button_status(driver):
         )
 
         # Check if the button is disabled
-        if not button.is_enabled() and False:
+        if not button.is_enabled():
             print(datetime.datetime.now(), "oh no!")
         else:
             print(datetime.datetime.now(), "oh yes!")
